@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import {MyCoolButton} from "./components/MyCoolButton";
 
-function App() {
+
+export default function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <>
+          <MyCoolButton tovchner="my 1 button" />
+        </>
+        <>
+          <MyCoolButton tovchner="my 2 button" />
+        </>
+        <>
+          <MyCoolButton tovchner="my 3 button" />
+        </>
+        <>
+          <MyCoolButton />
+        </>
       </header>
     </div>
   );
 }
 
-export default App;
+
