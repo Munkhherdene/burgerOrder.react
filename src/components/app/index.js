@@ -1,6 +1,6 @@
 import React from "react";
-import "./App.css";
-import {Comment} from "./components/comments";
+import "./style.css";
+import {Comment} from "../comments/index.js";
 
 export default function App() {
   return (

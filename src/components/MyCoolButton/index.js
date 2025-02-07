@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import { Comment } from "../comments";
 
 
 export const MyCoolButton = (props) => {
@@ -10,6 +9,8 @@ export const MyCoolButton = (props) => {
   return (
     <div>
       {/* <span>{props.tovchner ? props.tovchner : "My default"}</span> <br></br> */}
+      <span className="coolText"> test</span>
+      <br/>
       <input
         onClick={() => clickHandler(props.comment)}
         className="myCoolButton"

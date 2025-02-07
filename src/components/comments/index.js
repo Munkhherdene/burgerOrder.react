@@ -17,7 +17,7 @@ export class Comment extends React.Component{
     render(){
         return (
             <div>
-                <div>{this.state.comment}</div>
+                <div style={css}>{this.state.comment}</div>
                 <div>{this.props.zohiogch}</div>
                 <br/>
                 <input onChange={this.bichih} type="text" placeholder="write your comment" />
@@ -30,4 +30,9 @@ export class Comment extends React.Component{
             
         )
     }
-}
+};
+
+const css = {
+    backgroundColor: "gray",
+    color: "blue"
+};
